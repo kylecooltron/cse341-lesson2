@@ -1,0 +1,36 @@
+
+// - - - - - - - - - LOCAL HOST
+
+// list all contacts
+http://localhost:3000/contacts
+
+###
+
+// list contact by id
+http://localhost:3000/contact?id=63b9ffa4d977ff7452ebbe7b
+
+
+
+// - - - - - - - - - RENDER
+
+// list all contacts
+https://cse341-lesson1-yfk9.onrender.com/contacts
+
+###
+
+// list contact by id
+https://cse341-lesson1-yfk9.onrender.com/contact?id=63b9ffd8d977ff7452ebbe7c
+
+
+
+
+/// - - - - - - - - - - - TESTING / NOTES
+
+# POST https://example.com/comments HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name": "sample",
+#     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+# }
+

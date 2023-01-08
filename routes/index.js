@@ -14,9 +14,6 @@ routes.get('/contacts', contacts_controller.getContacts);
 routes.get('/contact', contacts_controller.getContact);
 
 routes.get('/', home_controller.index);
-routes.get('/home/people', home_controller.index_people_list);
-routes.get('/home/sign-in', home_controller.index_sign_in);
-
 routes.get('/test', test_controller.test);
 
 module.exports = routes;

@@ -7,7 +7,7 @@ http://localhost:3000/contacts
 ###
 
 // list contact by id
-http://localhost:3000/contact?id=63b9ffa4d977ff7452ebbe7b
+http://localhost:3000/contacts/63b9ffa4d977ff7452ebbe7b
 
 
 ###
@@ -19,7 +19,7 @@ https://cse341-lesson2-119m.onrender.com/contacts
 ###
 
 // list contact by id
-https://cse341-lesson2-119m.onrender.com/contact?id=63b9ffd8d977ff7452ebbe7c
+https://cse341-lesson2-119m.onrender.com/contacts/63b9ffd8d977ff7452ebbe7c
 
 
 

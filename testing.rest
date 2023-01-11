@@ -46,4 +46,27 @@ content-type: application/json
 
 
 ### list contact by id
-{{render}}/contacts/63b9ffd8d977ff7452ebbe7c
+{{render}}/contacts/63be566f6446feea971833d6
+
+
+### Create contact
+POST {{render}}/contacts HTTP/1.1
+content-type: application/json
+
+{"firstName":"Rick","lastName":"Jones","email":"gamer5013@gmail.com","favoriteColor":"Rainbow","birthday":"2014-1-22"}
+
+
+### Update contact
+PUT {{render}}/contacts/63be56596446feea971833d5 HTTP/1.1 
+content-type: application/json
+
+{"firstName":"Joseph", "lastName":"Smith", "email":"jsmith@test.com", "favoriteColor":"Gold", "birthday":"01/11/1820"}
+
+
+### Delete Contact by Id
+DELETE {{render}}/contacts/63be56596446feea971833d5 HTTP/1.1
+
+
+### Create random contact with fake data
+POST {{render}}/contacts-generate HTTP/1.1
+content-type: application/json

@@ -1,36 +1,49 @@
 
-// - - - - - - - - - LOCAL HOST
-
-// list all contacts
-http://localhost:3000/contacts
-
-###
-
-// list contact by id
-http://localhost:3000/contacts/63b9ffa4d977ff7452ebbe7b
-
-
-###
-// - - - - - - - - - RENDER
-
-// list all contacts
-https://cse341-lesson2-119m.onrender.com/contacts
-
-###
-
-// list contact by id
-https://cse341-lesson2-119m.onrender.com/contacts/63b9ffd8d977ff7452ebbe7c
+// Variables
+@local = http://localhost:3000
+@render = https://cse341-lesson2-119m.onrender.com
 
 
 
+// - - - - - - - - - - - - - - - - - - - - - LOCAL HOST
 
-/// - - - - - - - - - - - TESTING / NOTES
+### list all contacts
+{{local}}/contacts
 
-# POST https://example.com/comments HTTP/1.1
-# content-type: application/json
 
-# {
-#     "name": "sample",
-#     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
-# }
+### list contact by id
+{{local}}/contacts/63be53b5f0a60a8ef3aabfb2
 
+
+### Create contact
+POST {{local}}/contacts HTTP/1.1
+content-type: application/json
+
+{"firstName":"Rick","lastName":"Jones","email":"gamer5013@gmail.com","favoriteColor":"Rainbow","birthday":"2014-1-22"}
+
+
+### Update contact
+PUT {{local}}/contacts/63be51dc2bfc475c309c9970 HTTP/1.1 
+content-type: application/json
+
+{"firstName":"Joseph", "lastName":"Smith", "email":"jsmith@test.com", "favoriteColor":"Gold", "birthday":"01/11/1820"}
+
+
+### Delete Contact by Id
+DELETE {{local}}/contacts/63be51dc2bfc475c309c9970 HTTP/1.1
+
+
+### Create random contact with fake data
+POST {{local}}/contacts-generate HTTP/1.1
+content-type: application/json
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - RENDER
+
+### list all contacts
+{{render}}/contacts
+
+
+### list contact by id
+{{render}}/contacts/63b9ffd8d977ff7452ebbe7c

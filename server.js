@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const mongodb = require('./db/connect');
 
-
 // eslint-disable-next-line no-undef
 const port = process.env.PORT || 3000;
 

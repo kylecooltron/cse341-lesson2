@@ -154,6 +154,20 @@
           }
         }
       }
+    },
+    "/contacts-generate/": {
+      "post": {
+        "description": "Create a random contact with generated data using faker.js",
+        "parameters": [],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
     }
   }
 }
